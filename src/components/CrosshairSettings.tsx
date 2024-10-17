@@ -38,7 +38,7 @@ export default function CrosshairSettings({
         <Slider
           defaultValue={[0]}
           max={50}
-          min={0}
+          min={2}
           step={1}
           onValueChange={(e) => handleSettingsChange("pipWidth", e[0])}
         />
@@ -48,7 +48,7 @@ export default function CrosshairSettings({
         <Slider
           defaultValue={[0]}
           max={50}
-          min={0}
+          min={2}
           step={1}
           onValueChange={(e) => handleSettingsChange("pipHeight", e[0])}
         />
