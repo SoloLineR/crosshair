@@ -1,0 +1,48 @@
+.dot {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: red;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 999999999999999px;
+}
+.topPip {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bottomPip {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.leftPip {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.rightPip {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
