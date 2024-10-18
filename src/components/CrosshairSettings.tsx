@@ -21,12 +21,12 @@ export default function CrosshairSettings({
   }
 
   return (
-    <div className=" grid grid-cols-2 gap-4">
+    <div className=" grid grid-cols-2 ">
       <div className="p-4">
         <p className="text-4xl">Crosshair</p>
         <p className="text-2xl py-4">Gap: {crosshairSettingsState.pipGap}</p>
         <Slider
-          defaultValue={[0]}
+          defaultValue={[1]}
           max={50}
           min={0}
           step={1}
@@ -36,7 +36,7 @@ export default function CrosshairSettings({
           Width: {crosshairSettingsState.pipWidth}
         </p>
         <Slider
-          defaultValue={[0]}
+          defaultValue={[3]}
           max={50}
           min={2}
           step={1}
@@ -46,7 +46,7 @@ export default function CrosshairSettings({
           Height: {crosshairSettingsState.pipHeight}
         </p>
         <Slider
-          defaultValue={[0]}
+          defaultValue={[18]}
           max={50}
           min={2}
           step={1}
@@ -56,7 +56,7 @@ export default function CrosshairSettings({
           Pip Opacity: {crosshairSettingsState.pipOpacity}
         </p>
         <Slider
-          defaultValue={[0]}
+          defaultValue={[1]}
           max={100}
           min={0}
           step={1}
@@ -66,13 +66,16 @@ export default function CrosshairSettings({
           Pip Border: {`${crosshairSettingsState.pipBorder}`}
         </p>
         <Toggle
-          defaultPressed={crosshairSettingsState.pipBorder}
-          onPressedChange={(e) => handleSettingsChange("pipBorder", !e)}
+          className="size-12 rounded-none border-2 "
+          onPressedChange={(e) => {
+            handleSettingsChange("pipBorder", e);
+          }}
         >
-          Toggle
+          {" "}
+          {crosshairSettingsState.pipBorder ? "off" : "on"}
         </Toggle>
 
-        <Separator className="bg-foreground my-5 h-1" />
+        <Separator className="bg-cream my-5 h-1" />
         <p className="text-4xl">Dot</p>
         <p className="text-2xl py-4">
           Dot Opacity: {crosshairSettingsState.dotOpacity}
@@ -96,7 +99,7 @@ export default function CrosshairSettings({
         />
       </div>
 
-      <div className=" flex-1 border-l-4 ">
+      <div className=" flex-1 border-l-4 p-4 ">
         <p className="text-4xl">Color</p>
         <p className="text-2xl py-4">R: {crosshairSettingsState.colorR}</p>
         <Slider

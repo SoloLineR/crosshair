@@ -25,13 +25,13 @@ function App() {
 
   return (
     <div>
-      <div>deadlock</div>
+      <div className="text-5xl text-center py-6">Deadlock Crosshair</div>
       <div className="container flex justify-between mx-auto ">
-        <div className="w-[50%] border-foreground border-2">
+        <div className="w-[50%] border-cream border-2">
           <CrorsshairDisplay crosshairSettingsState={crosshairSettingsState} />
           <CopySettings />
         </div>
-        <div className="w-[40%] outline-dotted outline-red-400">
+        <div className="w-[45%] border-cream border-2">
           <CrosshairSettings
             setCrosshairSettingsSate={setCrosshairSettingsSate}
             crosshairSettingsState={crosshairSettingsState}
