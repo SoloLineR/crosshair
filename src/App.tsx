@@ -1,7 +1,7 @@
 import { useState } from "react";
 import CopySettings from "./components/CopySettings";
 import CrorsshairDisplay from "./components/crosshairDisplay/CrorsshairDisplay";
-import CrosshaieRGB from "./components/CrosshaieRGB";
+
 import CrosshairSettings from "./components/CrosshairSettings";
 import { CrosshairSettingsObj } from "./types";
 
@@ -27,7 +27,7 @@ function App() {
     <div>
       <div>deadlock</div>
       <div className="container flex justify-between mx-auto ">
-        <div className="w-[50%] outline-dotted outline-red-400">
+        <div className="w-[50%] border-foreground border-2">
           <CrorsshairDisplay crosshairSettingsState={crosshairSettingsState} />
           <CopySettings />
         </div>

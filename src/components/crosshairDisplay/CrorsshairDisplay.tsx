@@ -7,8 +7,6 @@ export default function CrorsshairDisplay({
 }) {
   return (
     <div className="bg-[url('../public/display-crosshair.png')] size-full bg-no-repeat bg-cover bg-center relative">
-      <span className=""></span>
-
       <span
         className={styles.dot}
         style={{
