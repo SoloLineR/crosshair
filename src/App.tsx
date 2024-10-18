@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Toaster } from "@/components/ui/sonner";
 import CopySettings from "./components/CopySettings";
 import CrorsshairDisplay from "./components/crosshairDisplay/CrorsshairDisplay";
 
@@ -37,6 +38,7 @@ function App() {
           />
         </div>
       </div>
+      <Toaster />
     </div>
   );
 }

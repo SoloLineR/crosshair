@@ -1,6 +1,6 @@
 import { CrosshairSettingsObj } from "@/types";
 import { Button } from "./ui/button";
-
+import { toast } from "sonner";
 export default function CopySettings({
   crosshairSettingsState,
 }: {
@@ -23,17 +23,19 @@ citadel_crosshair_pip_width ${crosshairSettingsState.pipWidth};
     navigator.clipboard
       .writeText(config)
       .then(() => {
-        console.log("Text copied to clipboard");
-        alert("Text copied to clipboard: " + config);
+        toast.success("Config copied to clipboard");
       })
       .catch((err) => {
-        console.error("Failed to copy text: ", err);
+        toast.error("Failed to copy text: ", err);
       });
   }
 
   return (
-    <div className="my-3 flex justify-end">
-      <Button onClick={handleCopy}>Copy Settings</Button>
+    <div className="my-3 flex justify-end gap-4">
+      <div>Paste the config into the game console. (Default key F7)</div>
+      <Button className="rounded-lg" onClick={handleCopy}>
+        Copy config
+      </Button>
     </div>
   );
 }
