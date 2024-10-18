@@ -35,7 +35,7 @@
 
 @layer base {
   * {
-    @apply border-cream;
+    @apply border-cream  font-sans;
   }
   body {
     @apply bg-darkbg text-cream;

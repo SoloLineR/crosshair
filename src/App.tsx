@@ -21,7 +21,6 @@ const initialState: CrosshairSettingsObj = {
 function App() {
   const [crosshairSettingsState, setCrosshairSettingsSate] =
     useState<CrosshairSettingsObj>(initialState);
-  console.log(crosshairSettingsState);
 
   return (
     <div>
@@ -29,7 +28,7 @@ function App() {
       <div className="container flex justify-between mx-auto ">
         <div className="w-[50%] border-cream border-2">
           <CrorsshairDisplay crosshairSettingsState={crosshairSettingsState} />
-          <CopySettings />
+          <CopySettings crosshairSettingsState={crosshairSettingsState} />
         </div>
         <div className="w-[45%] border-cream border-2">
           <CrosshairSettings
