@@ -1,6 +1,7 @@
 import { CrosshairSettingsObj } from "@/types";
 import { Button } from "./ui/button";
 import { v4 as uuidv4 } from "uuid";
+import { toast } from "sonner";
 
 import {
   HoverCard,
@@ -29,12 +30,14 @@ export default function SavedConfigs({
 
     localStorage.setItem("savedConfigs", JSON.stringify(updatedItems));
     setSavedCH(updatedItems);
+    toast.success("Config saved successfully");
   }
   function handleDelete(id: string) {
     const updatedItems = savedCH.filter((ch) => ch.id !== id);
 
     localStorage.setItem("savedConfigs", JSON.stringify(updatedItems));
     setSavedCH(updatedItems);
+    toast.success("Config deleted successfully");
   }
   useEffect(() => {
     const items = JSON.parse(localStorage.getItem("savedConfigs")!) || [];
@@ -77,7 +80,7 @@ export default function SavedConfigs({
               </div>
             ))
           ) : (
-            <div> You dont save any config</div>
+            <div> There is no saved config</div>
           )}
         </div>
       </ScrollArea>
