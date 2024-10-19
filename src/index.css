@@ -41,3 +41,9 @@
     @apply bg-darkbg text-cream;
   }
 }
+
+@layer bg-display-small {
+  .black-box div {
+    background-image: none !important;
+  }
+}

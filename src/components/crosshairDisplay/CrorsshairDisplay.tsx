@@ -6,7 +6,7 @@ export default function CrorsshairDisplay({
   crosshairSettingsState: CrosshairSettingsObj;
 }) {
   return (
-    <div className="bg-[url('../public/display-crosshair.png')] size-full min-w-full      bg-no-repeat bg-cover bg-center relative">
+    <div className="bg-[url('../public/display-crosshair.png')]   min-w-full   min-h-full   bg-no-repeat bg-cover bg-center relative">
       <span
         className={styles.dot}
         style={{
