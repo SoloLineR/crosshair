@@ -151,8 +151,11 @@ export default function CrosshairSettings({
             );
           })}
         </div>
-        <div className="p-4">
-          <SavedConfigs crosshairSettingsState={crosshairSettingsState} />
+        <div className="">
+          <SavedConfigs
+            crosshairSettingsState={crosshairSettingsState}
+            setCrosshairSettingsSate={setCrosshairSettingsSate}
+          />
         </div>
       </div>
     </div>
