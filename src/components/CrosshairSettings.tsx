@@ -4,6 +4,7 @@ import { Separator } from "./ui/separator";
 import { Toggle } from "@/components/ui/toggle";
 import CrorsshairDisplay from "./crosshairDisplay/CrorsshairDisplay";
 import { crosshairPresets } from "@/contants";
+import SavedConfigs from "./SavedConfigs";
 
 export default function CrosshairSettings({
   setCrosshairSettingsSate,
@@ -149,6 +150,9 @@ export default function CrosshairSettings({
               </button>
             );
           })}
+        </div>
+        <div className="p-4">
+          <SavedConfigs crosshairSettingsState={crosshairSettingsState} />
         </div>
       </div>
     </div>
