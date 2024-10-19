@@ -61,7 +61,7 @@ export default function CrosshairSettings({
           Pip Opacity: {crosshairSettingsState.pipOpacity}
         </p>
         <Slider
-          value={[crosshairSettingsState.pipOpacity]}
+          value={[crosshairSettingsState.pipOpacity * 100]}
           defaultValue={[100]}
           max={100}
           min={0}
@@ -88,7 +88,7 @@ export default function CrosshairSettings({
           Dot Opacity: {crosshairSettingsState.dotOpacity}
         </p>
         <Slider
-          value={[crosshairSettingsState.dotOpacity]}
+          value={[crosshairSettingsState.dotOpacity * 100]}
           defaultValue={[0]}
           max={100}
           step={1}
@@ -98,7 +98,7 @@ export default function CrosshairSettings({
           Dot Outline Opacity: {crosshairSettingsState.dotOutlineOpacity}
         </p>
         <Slider
-          value={[crosshairSettingsState.dotOutlineOpacity]}
+          value={[crosshairSettingsState.dotOutlineOpacity * 100]}
           defaultValue={[0]}
           max={100}
           step={1}

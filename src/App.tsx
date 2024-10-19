@@ -25,7 +25,9 @@ function App() {
 
   return (
     <div>
-      <div className="text-5xl text-center py-6">Deadlock Crosshair</div>
+      <div className="text-5xl text-center py-6">
+        Deadlock Crosshair Playground
+      </div>
       <div className="container flex justify-between mx-auto ">
         <div className="w-[50%] border-cream border-2">
           <CrorsshairDisplay crosshairSettingsState={crosshairSettingsState} />
