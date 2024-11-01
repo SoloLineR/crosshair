@@ -108,18 +108,19 @@ export default function CrosshairSettings({
             handleSettingsChange("dotOutlineOpacity", e[0] / 100)
           }
         />
-        <div className="py-6">
+        <p className="py-4 ">Default pipGap presets</p>
+        <div className=" flex justify-center gap-2">
           <Button
             onClick={() => handleSettingsChange("defaultPipGap", 10)}
             className="uppercase"
           >
-            riffle/smg
+            rifle/smg
           </Button>{" "}
           <Button
             onClick={() => handleSettingsChange("defaultPipGap", 10)}
-            className="uppercase"
+            className="  uppercase"
           >
-            sniper
+            sniper/bow
           </Button>{" "}
           <Button
             onClick={() => handleSettingsChange("defaultPipGap", 20)}

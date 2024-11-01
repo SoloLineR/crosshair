@@ -33,7 +33,7 @@ citadel_crosshair_pip_width ${crosshairSettingsState.pipWidth};
   return (
     <div className="my-3 flex justify-end gap-4">
       <div>Paste the config into the game console. (Default key F7)</div>
-      <Button className="rounded-lg" onClick={handleCopy}>
+      <Button className="rounded-lg py-1" onClick={handleCopy}>
         Copy config
       </Button>
     </div>

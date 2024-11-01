@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div>
-      <div className="text-5xl text-center py-6">
+      <div className="text-5xl text-center py-4">
         Deadlock Crosshair Playground
       </div>
       <div className="container flex justify-between mx-auto ">
@@ -34,7 +34,7 @@ function App() {
           <CrorsshairDisplay crosshairSettingsState={crosshairSettingsState} />
           <CopySettings crosshairSettingsState={crosshairSettingsState} />
         </div>
-        <div className="w-[45%] border-cream border-2">
+        <div className="w-[47%] border-cream border-2">
           <CrosshairSettings
             setCrosshairSettingsSate={setCrosshairSettingsSate}
             crosshairSettingsState={crosshairSettingsState}
