@@ -5,6 +5,7 @@ import { Toggle } from "@/components/ui/toggle";
 import CrorsshairDisplay from "./crosshairDisplay/CrorsshairDisplay";
 import { crosshairPresets } from "@/contants";
 import SavedConfigs from "./SavedConfigs";
+import { Button } from "./ui/button";
 
 export default function CrosshairSettings({
   setCrosshairSettingsSate,
@@ -32,7 +33,7 @@ export default function CrosshairSettings({
           value={[crosshairSettingsState.pipGap]}
           defaultValue={[1]}
           max={50}
-          min={0}
+          min={-10}
           step={1}
           onValueChange={(e) => handleSettingsChange("pipGap", e[0])}
         />
@@ -107,6 +108,26 @@ export default function CrosshairSettings({
             handleSettingsChange("dotOutlineOpacity", e[0] / 100)
           }
         />
+        <div className="py-6">
+          <Button
+            onClick={() => handleSettingsChange("defaultPipGap", 10)}
+            className="uppercase"
+          >
+            riffle/smg
+          </Button>{" "}
+          <Button
+            onClick={() => handleSettingsChange("defaultPipGap", 10)}
+            className="uppercase"
+          >
+            sniper
+          </Button>{" "}
+          <Button
+            onClick={() => handleSettingsChange("defaultPipGap", 20)}
+            className="uppercase"
+          >
+            shotgun
+          </Button>
+        </div>
       </div>
 
       <div className=" flex-1 border-l-4 p-4  ">

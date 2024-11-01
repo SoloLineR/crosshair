@@ -18,7 +18,9 @@ export default function CrorsshairDisplay({
       <span
         className={styles.topPip}
         style={{
-          top: `calc(50% - 10px - ${crosshairSettingsState.pipGap * 2}px)`,
+          top: `calc(50% - ${crosshairSettingsState.defaultPipGap}px - ${
+            crosshairSettingsState.pipGap * 2
+          }px)`,
           height: `${crosshairSettingsState.pipHeight}px`,
           width: `${crosshairSettingsState.pipWidth}px`,
           opacity: crosshairSettingsState.pipOpacity,
@@ -30,7 +32,9 @@ export default function CrorsshairDisplay({
       <span
         className={styles.bottomPip}
         style={{
-          top: `calc(50% + 10px + ${crosshairSettingsState.pipGap * 2}px)`,
+          top: `calc(50% + ${crosshairSettingsState.defaultPipGap}px + ${
+            crosshairSettingsState.pipGap * 2
+          }px)`,
           height: `${crosshairSettingsState.pipHeight}px`,
           width: `${crosshairSettingsState.pipWidth}px`,
           opacity: crosshairSettingsState.pipOpacity,
@@ -42,7 +46,9 @@ export default function CrorsshairDisplay({
       <span
         className={styles.leftPip}
         style={{
-          left: `calc(50% - 10px - ${crosshairSettingsState.pipGap * 2}px)`,
+          left: `calc(50% - ${crosshairSettingsState.defaultPipGap}px - ${
+            crosshairSettingsState.pipGap * 2
+          }px)`,
           width: `${crosshairSettingsState.pipHeight}px`,
           height: `${crosshairSettingsState.pipWidth}px`,
           opacity: crosshairSettingsState.pipOpacity,
@@ -54,7 +60,9 @@ export default function CrorsshairDisplay({
       <span
         className={styles.rightPip}
         style={{
-          left: `calc(50% + 10px + ${crosshairSettingsState.pipGap * 2}px)`,
+          left: `calc(50% + ${crosshairSettingsState.defaultPipGap}px + ${
+            crosshairSettingsState.pipGap * 2
+          }px)`,
           width: `${crosshairSettingsState.pipHeight}px`,
           height: `${crosshairSettingsState.pipWidth}px`,
           opacity: crosshairSettingsState.pipOpacity,

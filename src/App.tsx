@@ -17,6 +17,7 @@ const initialState: CrosshairSettingsObj = {
   colorR: 255,
   colorG: 255,
   colorB: 255,
+  defaultPipGap: 10,
 };
 
 function App() {

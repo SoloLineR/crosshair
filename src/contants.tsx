@@ -12,6 +12,7 @@ export const crosshairPresets: CrosshairSettingsObj[] = [
     colorR: 255,
     colorG: 255,
     colorB: 255,
+    defaultPipGap: 10,
   },
   {
     dotOpacity: 0.5,
@@ -24,6 +25,7 @@ export const crosshairPresets: CrosshairSettingsObj[] = [
     colorR: 0,
     colorG: 255,
     colorB: 0,
+    defaultPipGap: 10,
   },
   {
     dotOpacity: 1,
@@ -36,6 +38,7 @@ export const crosshairPresets: CrosshairSettingsObj[] = [
     colorR: 255,
     colorG: 0,
     colorB: 0,
+    defaultPipGap: 10,
   },
   {
     dotOpacity: 0.3,
@@ -48,6 +51,7 @@ export const crosshairPresets: CrosshairSettingsObj[] = [
     colorR: 0,
     colorG: 0,
     colorB: 255,
+    defaultPipGap: 10,
   },
   {
     dotOpacity: 0.7,
@@ -60,6 +64,7 @@ export const crosshairPresets: CrosshairSettingsObj[] = [
     colorR: 255,
     colorG: 165,
     colorB: 0,
+    defaultPipGap: 10,
   },
   {
     dotOpacity: 0.7,
@@ -72,5 +77,6 @@ export const crosshairPresets: CrosshairSettingsObj[] = [
     colorR: 255,
     colorG: 165,
     colorB: 0,
+    defaultPipGap: 10,
   },
 ];
